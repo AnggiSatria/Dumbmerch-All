@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "",
-    "database": "integration-b32",
+    "database": "db_baru",
     "host": "localhost",
     "dialect": "mysql"
   },

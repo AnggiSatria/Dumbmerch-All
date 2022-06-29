@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import NavigationAdmin from '../components/NavigationAdmin';
 import { useQuery, useMutation } from "react-query";
 import { API } from "../config/api";
+import DarkMode from '../components/fitur/DarkMode';
 
 function ListCategory() {
 
@@ -67,6 +68,11 @@ function ListCategory() {
     return (
         <div className={cssModule.CategoryC}>
             <NavigationAdmin title={title} />
+
+            <div className="fitur" style={{display : "flex", justifyContent : "center", marginTop : "20px", flex : "2"}}>
+              <DarkMode/>
+            </div>
+
             <div className={cssModule.container}>
                 <div className={cssModule.mainContainer}>
                     <div className={cssModule.mainHeader}>

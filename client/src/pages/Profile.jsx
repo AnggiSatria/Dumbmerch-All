@@ -7,6 +7,7 @@ import { UserContext } from '../context/userContext'
 import { useQuery } from "react-query";
 import { API } from "../config/api";
 import dateFormat from "dateformat";
+import DarkMode from '../components/fitur/DarkMode';
 
 function Profile() {
     const title = "Profile";
@@ -38,6 +39,10 @@ function Profile() {
         <div className={cssModule.ProfileC}>
 
             <Navigation title={title} />
+
+            <div className="fitur" style={{display : "flex", justifyContent : "center", marginTop : "20px", flex : "2"}}>
+              <DarkMode/>
+            </div>
 
             <div className={cssModule.mainContainer}>
 

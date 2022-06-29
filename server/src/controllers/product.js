@@ -11,7 +11,8 @@ exports.addProduct = async (req, res) => {
     try {
 
       let { idCategory } = req.body;
-      idCategory = idCategory.split(",");
+      idCategory = idCategory?.split(",");
+
   
       const data = {
         name: req.body.name,

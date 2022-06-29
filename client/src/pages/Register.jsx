@@ -6,6 +6,7 @@ import { useMutation } from 'react-query';
 import { API } from '../config/api';
 import { Alert } from 'react-bootstrap';
 import { UserContext } from '../context/userContext';
+import DarkMode from '../components/fitur/DarkMode';
 
 
 function Register() {
@@ -73,9 +74,14 @@ function Register() {
     return (
         <div className={cssModules.mainContainer}>
 
-            <div className={cssModules.container}>
+            <div className={cssModules.container} style={{display : 'flex', flexDirection : "column"}}>
 
-                <div className={cssModules.leftSide}>
+            <div className="fitur" style={{display : "flex", justifyContent : "center", marginTop : "20px"}}>
+              <DarkMode/>
+            </div>
+            
+            <div className="All" style={{display : "flex", width : "100%"}}>
+              <div className={cssModules.leftSide}>
                     <img src={logoDumbmerch} alt="Logo Dumbmerch" />
                     <h1>Easy, Fast and Reliable</h1>
                     <p>Go shopping for merchandise, just go to dumb merch shopping. the biggest merchandise in <span>Indonesia</span></p>
@@ -99,6 +105,8 @@ function Register() {
                         {message && message}
                     </div>
                 </div>
+            </div>
+                
 
             </div>
 

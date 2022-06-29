@@ -5,6 +5,7 @@ import NavigationAdmin from '../components/NavigationAdmin.jsx';
 import { useNavigate } from 'react-router-dom';
 import { useQuery, useMutation } from "react-query";
 import { API } from "../config/api";
+import Darkmode from "../../src/components/fitur/DarkMode"
 
 function AdminAddCategory() {
     let title = 'List Category' 
