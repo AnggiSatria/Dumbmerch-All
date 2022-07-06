@@ -77,7 +77,7 @@ function Profile() {
                 <div className={cssModule.rightSide}>
                     <h2>My Transaction</h2>
                     {transactions?.map((item, index) => (
-                    <div className={cssModule.transactionCont} key={index}>
+                    <div className={cssModule.transactionCont} key={index} style={{marginTop : "10px"}}>
                         <div className={cssModule.trImg}>
                             <img src={item.product.image} alt={item.product.name} />
                         </div>

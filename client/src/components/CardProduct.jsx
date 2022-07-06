@@ -65,11 +65,11 @@ function CardProduct() {
 
     return (
         <div>
-            <select onChange={(e) => setSortType(e.target.value)}> 
+            <select onChange={(e) => setSortType(e.target.value)} style={{display : "flex", justifyContent : "center"}}> 
                     <option value="price">By Price</option>
                     <option value="qty">By Qty</option>
                     </select>
-        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', marginTop : '50px' }}>
             
             {
                 datas.map((item, index) => (

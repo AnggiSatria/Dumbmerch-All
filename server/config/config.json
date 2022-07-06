@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "",
-    "database": "db_baru",
-    "host": "localhost",
+    "username": "anggisatriaaa",
+    "password": "21031999As",
+    "database": "dumbmerch",
+    "host": "103.181.142.60",
     "dialect": "mysql"
   },
   "test": {
